@@ -4,7 +4,8 @@ class FiguresController < ApplicationController
   end
 
   post 'figures' do
-
+    @figure = Figure.new(name: params[figure[name]])
+    
   end
 
 end
